@@ -1,0 +1,88 @@
+/********** Base styles **********/
+body{
+	background-color: #FFF5EE;
+}
+*{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+	text-align: center;
+	font-size: 300%;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+section div{
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	border: 1px solid #000000;
+	background-color: #DCDCDC;
+	position: relative;
+}
+section.title1, section.title2, section.title3{
+	width: 33.33%;
+	border: 1px solid black;
+	padding: 4px;
+	text-align: center;
+	font-size: 175%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+section.title1{
+	background-color: #BC8F8F;
+	color: #FFFFFF;
+}
+section.title2{
+	background-color: #B0C4DE;
+	color: #000000;
+}
+section.title3{
+	background-color: #D2B48C;
+	color: #2E8B57;
+}
+section.text{
+	margin-top: 40px;
+	padding: 15px;
+	font-size: 125%
+}
+
+/* Simple Responsive Framework */
+.row {
+  width: 100%;
+}
+
+/********** Desktop Devices **********/
+@media(min-width: 992px){
+	.col-lg-4{
+		float: left;		
+		width: 33.33%;
+	}
+}
+
+/********** Tablet Devices **********/
+@media(min-width: 768px) and (max-width: 991px){
+	.col-md-6{
+		float: left;		
+		width: 50%;
+	}
+	.col-md-12{
+		float: left;		
+		width: 100%;
+	}
+	.col-md-12 div{
+		width: 97.5%;
+	}
+}
+
+/********** Mobile Devices **********/
+@media(max-width: 767px){
+	.col-sm-12{
+		float: left;		
+		width: 100%;
+	}
+}
